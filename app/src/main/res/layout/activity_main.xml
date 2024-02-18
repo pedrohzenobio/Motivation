@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/relative_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        >
+
+        <ImageButton
+            android:id="@+id/image_button_loop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pink"
+            android:src="@drawable/ic_loop" />
+
+        <ImageButton
+            android:id="@+id/image_button_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pink"
+            android:src="@drawable/ic_emoji" />
+
+        <ImageButton
+            android:id="@+id/image_button_sun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pink"
+            android:src="@drawable/ic_sun" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_ola"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_1"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="@string/lets_begin" />
+
+    <TextView
+        android:id="@+id/text_clear_name"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="8dp"
+        android:layout_below="@id/relative_1"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/text_ola"
+        android:textColor="@color/black"
+        android:textAlignment="textEnd"
+        android:layout_marginTop="24dp"
+        android:text="Novo nome" />
+
+    <TextView
+        android:id="@+id/text_mensage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="128dp"
+        android:layout_height="2dp"
+        android:background="@color/pink"
+        android:layout_below="@id/text_mensage"
+        android:elevation="5dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button_nova_frase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:text="@string/new_phrase" />
+
+</RelativeLayout>
